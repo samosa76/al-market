@@ -1,27 +1,29 @@
 .login_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #252323;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.left {
+.tes {
+    background-color: red;
+}
+
+.card {
+    margin: 64px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 580px;
-    width: 500px;
     text-align: center;
+    justify-content: center;
+    height: 580px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
-    color: white;
+    color: black;
 }
 
-.left>p {
+.card>div>p {
     font-size: 36px;
     font-weight: bold;
     margin: 0%;
@@ -34,46 +36,32 @@
     margin-bottom: 16px;
 }
 
-.login_input_name {
-    margin-bottom: 8px;
+.container_input {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.title {
-    text-align: left;
-    margin-bottom: 1%;
+.input_form:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CBB17;
 }
 
-input::placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-family: poppins, sans-serif;
-    color: #7A7A7A;
-}
-
-.placeforname {
+.input_form {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-color: white;
     height: 30px;
-    width: 250px;
-}
-
-.placeforemail {
-    background-color: white;
-    border-radius: 5px;
-    height: 30px;
-    width: 250px;
-    margin-bottom: 32px;
+    width: 50%;
+    text-align: center;
 }
 
 .button {
     background-color: #4CBB17;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
-    height: 32px;
-    width: 88px;
+    width: 50%;
     border: none;
+    margin-top: 16px;
 }
 
 .button:hover {
@@ -83,5 +71,5 @@ input::placeholder {
 .button>p {
     color: white;
     font-size: 14px;
-    margin: auto;
+    margin: 16px;
 }

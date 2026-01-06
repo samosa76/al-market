@@ -2,33 +2,32 @@ import style from './Login.module.css';
 
 function Login() {
     return (
-        <div className={style.login_container}>
-            <div className={style.left}>
-                <img src="/image/user.png" alt="user" className={style.icon}></img>
-                <p className={style.title1}>Login</p>
-                <form>
-                    <div className={style.login_input_name}>
+        <div className={style.login_container} style={{ backgroundImage: "url('/image/bg_almarket.jpg')" }}>
 
-                        <div className={style.title}>
-                            <label for="Username"></label>
-                        </div>
+            <div className={style.card}>
+
+                <div>
+                    <img src="/image/user.png" alt="user" className={style.icon}></img>
+                </div>
+
+                <div>
+                    <p className={style.title1}>Login</p>
+                </div>
+
+                <form>
+                    <div className={style.container_input}>
 
                         <input
-                            className={style.placeforname}
+                            className={style.input_form}
                             type="text"
                             placeholder="Username"
                         />
 
                     </div>
 
-                    <div>
-
-                        <div className={style.title}>
-                            <label for="e-mail"></label>
-                        </div>
-
+                    <div className={style.container_input}>
                         <input
-                            className={style.placeforemail}
+                            className={style.input_form}
                             type="password"
                             placeholder="Password"
                         />
