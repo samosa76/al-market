@@ -2,14 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import LoginPage from './Pages/LoginPage';
+import HomePage from './Pages/HomePage';
+import Layout from './Component/Layout/Layout';
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path='/' element={<h1>Home</h1>} />
-        <Route path='/Login' element={<LoginPage />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/Login' element={<LoginPage />} />
+        </Routes>
+      </Layout>
     </div>
   );
 }
