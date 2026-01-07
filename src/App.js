@@ -5,6 +5,7 @@ import LoginPage from './Pages/LoginPage';
 import HomePage from './Pages/HomePage';
 import Layout from './Component/Layout/Layout';
 import KoperasiPage from './Seller/Pages/KoperasiPage';
+import DashboardPage from './Admin/Pages/DashboardPage';
 
 function App() {
   return (
@@ -13,7 +14,12 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/Login' element={<LoginPage />} />
+
+          {/* Seller Routes */}
           <Route path='/Koperasi/Home' element={<KoperasiPage />}/>
+
+          {/* Admin Routes */}
+          <Route path='/Admin/Dashboard' element={<DashboardPage />}/>
         </Routes>
       </Layout>
     </div>

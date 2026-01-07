@@ -1,0 +1,24 @@
+.container {
+    margin: 32px;
+    gap: 32px;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container_menu {
+    height: 400px;
+    flex: 30%;
+    background-color: teal;
+}
+
+@media (max-width: 768px) {
+    .flex_center {
+        flex-direction: column;
+        align-items: normal;
+    }
+    
+}
