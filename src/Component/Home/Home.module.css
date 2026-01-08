@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 24px;
+    background-color: #D9D9D9;
+}
+
+/* IDENTITAS & TOTAL BALANCE */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.topup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 510px;
+    background-color: #ffff;
+    border-radius: 30px;
+}
+
+.nama_kelas {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.saldo {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topup_button {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 180px;
+    background-color: #4CBB17;
+    border-radius: 10px;
+    gap: 32px;
+}
+
+.exepense_button {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 180px;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: -8px;
+    gap: 32px;
+}
+
+.income {
+    margin-left: 32px;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    rotate: 90deg;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+/* GRAFIK */
+.grafik {
+    height: 300px;
+    width: 780px;
+    background-color: #ffff;
+    border-radius: 30px;
+}
+
+/* DATE & HISTORY */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.date {
+    height: 50px;
+    width: 430px;
+    background-color: #ffff;
+    border-radius: 30px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 1250px;
+    background-color: #ffff;
+    border-radius: 30px;
+    gap: 24px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+.title_name {
+    margin-left: -180px;
+}
