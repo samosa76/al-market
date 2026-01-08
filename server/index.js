@@ -57,6 +57,8 @@ app.get('/api_transaction', routes);
 //     })
 // })
 
+app.get('/api_uid', routes)
+
 app.listen(8000, (err) => {
     if(err) console.log("somthing went wrong");
     console.log("Listening on port : 8000");
