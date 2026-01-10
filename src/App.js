@@ -6,6 +6,7 @@ import HomePage from './Pages/HomePage';
 import Layout from './Component/Layout/Layout';
 import KoperasiPage from './Seller/Pages/KoperasiPage';
 import DashboardPage from './Admin/Pages/DashboardPage';
+import ListBarangPage from './Seller/Pages/ListBarangPage';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
           <Route path='/Login' element={<LoginPage />} />
 
           {/* Seller Routes */}
-          <Route path='/Koperasi/Home' element={<KoperasiPage />}/>
+          <Route path='/Koperasi/Home' element={<KoperasiPage />} />
+          <Route path='/ListBarang' element={<ListBarangPage />} />
 
           {/* Admin Routes */}
-          <Route path='/Admin/Dashboard' element={<DashboardPage />}/>
+          <Route path='/Admin/Dashboard' element={<DashboardPage />} />
         </Routes>
       </Layout>
     </div>
