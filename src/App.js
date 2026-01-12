@@ -7,6 +7,7 @@ import Layout from './Component/Layout/Layout';
 import KoperasiPage from './Seller/Pages/KoperasiPage';
 import DashboardPage from './Admin/Pages/DashboardPage';
 import ListBarangPage from './Seller/Pages/ListBarangPage';
+import TransaksiPage from './Seller/Pages/TransaksiPage';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
 
           {/* Seller Routes */}
           <Route path='/Koperasi/Home' element={<KoperasiPage />} />
-          <Route path='/ListBarang' element={<ListBarangPage />} />
+          <Route path='/seller/ListBarang' element={<ListBarangPage />} />
+          <Route path='/seller/Transaksi' element={<TransaksiPage />  } />
 
           {/* Admin Routes */}
           <Route path='/Admin/Dashboard' element={<DashboardPage />} />

@@ -1,0 +1,245 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(148, 148, 148);
+    gap: 24px;
+}
+
+.title {
+    height: 115px;
+    border-radius: 30px;
+    background-size: contain;
+    position: relative;
+    margin-top: 24px;
+}
+
+.title>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.title_bg {
+    width: 1600px;
+    height: 115px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 500px;
+    background-color: #ffff;
+    border-radius: 30px;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    width: 1530px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.info {
+    display: flex;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    height: 130px;
+    width: 300px;
+    border-radius: 28px 0px 0px 28px;
+    object-fit: cover;
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+    width: 500px;
+    border-radius: 0px 28px 28px 0px;
+}
+
+.txt {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.price {
+    margin-bottom: 24px;
+}
+
+.sale {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 24px;
+}
+
+.btn_plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    background-color: #4CBB17;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.btn_min {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    background-color: #f51717;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.sale_price {
+    height: 130px;
+    width: 150px;
+    background-color: #4CBB17;
+    border-radius: 0px 28px 28px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 115px;
+        border-radius: 30px;
+    }
+
+    .title>p {
+        font-size: 36px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        height: 500px;
+        background-color: #ffff;
+        border-radius: 30px;
+    }
+
+    .card {
+        display: flex;
+        width: 500px;
+        height: 140px;
+        background-color: #ffff;
+        border-radius: 30px;
+    }
+
+    .info {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .img {
+        height: 140px;
+        width: 140px;
+        border-radius: 28px 0px 0px 28px;
+        object-fit: cover;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: baseline;
+        margin-left: 16px;
+        height: 140px;
+        width: 100%;
+        border-radius: 0px 28px 28px 0px;
+    }
+
+    .txt {
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    .sale {
+        display: flex;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-right: 24px;
+    }
+
+    .btn_plus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        width: 20px;
+        border: 1px solid black;
+        background-color: #4CBB17;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+    .btn_min {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        width: 20px;
+        border: 1px solid black;
+        background-color: #f51717;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+    .sale_price {
+        height: 140px;
+        width: 90px;
+        background-color: #4CBB17;
+        border-radius: 0px 28px 28px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

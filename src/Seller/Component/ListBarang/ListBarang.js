@@ -30,7 +30,7 @@ function Barang() {
 
             <div className={style.text}>
                 <div className={style.kriteria}>
-                    <p style={{ fontWeight: "regular", fontSize: "20px" }}>Nama :</p>
+                    <p style={{ fontWeight: "bold", fontSize: "20px" }}>Nama :</p>
                     <p style={{ fontWeight: "bold", fontSize: "20px" }}>Stock :</p>
                     <p style={{ fontWeight: "bold", fontSize: "20px" }}>Supllier :</p>
                 </div>
